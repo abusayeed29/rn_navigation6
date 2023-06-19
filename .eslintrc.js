@@ -1,17 +1,17 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    '@react-native-community',
+    '@react-native-community'
   ],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['react'],
   rules: {
@@ -20,7 +20,7 @@ module.exports = {
     'react/jsx-filename-extension': [1, {extensions: ['.js', '.jsx', '.tsx']}],
     'no-use-before-define': [
       'error',
-      {functions: true, classes: true, variables: false},
+      {functions: true, classes: true, variables: false}
     ]
   }
-};
+}

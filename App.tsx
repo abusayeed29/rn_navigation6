@@ -1,10 +1,14 @@
-import React from 'react';
-import { SafeAreaView } from 'react-native';
+import React from 'react'
 
-function App(): JSX.Element {
-  return <SafeAreaView />
+import { NavigationContainer } from '@react-navigation/native'
+import 'react-native-gesture-handler'
+import AppStack from './src/navigation/AppStack'
+
+export default function App(): JSX.Element {
+  return (
+    <NavigationContainer>
+      {/* <AuthStack /> */}
+      <AppStack />
+    </NavigationContainer>
+  )
 }
-
-const styles = StyleSheet.create({});
-
-export default App
